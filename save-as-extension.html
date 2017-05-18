@@ -1,0 +1,20 @@
+<script id="dashboard-save-as-extension" type="text/html">
+                <div data-bind="dxPopup: { 
+                        title: 'Save As...',
+                        width: 400,
+                        height: 185,
+                        visible: visible,
+                        showCloseButton: true,
+                        toolbarItems: [{
+                            toolbar: 'bottom',
+                            widget: 'dxButton',
+                            location: 'after',
+                            options: {
+                                text: 'Save',
+                                onClick: saveAs
+                            }
+                        }]
+                    }">
+                    <div data-bind="dxTextBox: { value: newName }"></div>
+                </div>    
+            </script>
