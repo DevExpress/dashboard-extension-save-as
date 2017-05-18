@@ -14,8 +14,11 @@ function SaveAsDashboardExtension(dashboardControl) {
     this.saveAs = function () {
         var newExtension = dashboardControl.findExtension("create-dashboard");
         newExtension.performCreateDashboard(_this.newName(), dashboardControl.dashboard().getJSON());
+        _this.hidePopup();
     };
-
+    this.hidePopup = function () {
+        _this.visible(false);
+    }
     
 }
 SaveAsDashboardExtension.prototype.start = function () {
