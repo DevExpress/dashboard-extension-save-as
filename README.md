@@ -1,4 +1,4 @@
-The **Save As** extension adds the additional "Save As" item to the [dashboard menu](https://documentation.devexpress.com/#Dashboard/CustomDocument117444) and allows you to save the opened dashboard with another name.
+The **Save As** extension adds the additional "Save As" button to the [dashboard menu](https://documentation.devexpress.com/#Dashboard/CustomDocument117444) that allows you to save the opened dashboard with another name.
 
 ![save-as-extension](https://user-images.githubusercontent.com/17986517/27138770-f4bfb910-5129-11e7-9346-a9a57dd41de8.png)
 
@@ -8,7 +8,10 @@ The **Save As** extension adds the additional "Save As" item to the [dashboard m
 
 2. Attach the download script to the project.
 ```xml
-<script src="/your-path/dashboard-extension-save-as/dist/save-as-extension.js"></script>
+<head>
+    <script src="/your-path/dashboard-extension-save-as/dist/save-as-extension.js"></script>
+    <!-- ... -->
+</head>
 ```
 3. Add the ```/dashboard-extension-save-as/dist/save-as-extension.html``` file content onto the page containing the Web Dashboard after the ```<body>``` tag. 
 
