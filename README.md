@@ -4,7 +4,7 @@ The **Save As** extension adds the additional "Save As" button to the [dashboard
 
 ## Installation
 
-1. Download the required version of scripts [here](https://github.com/DevExpress/dashboard-extension-save-as/releases) and add the *dist* folder in your project.
+1. Download the latest version of scripts [here](https://github.com/DevExpress/dashboard-extension-save-as/releases) and add the *dist* folder in your project.
 
 2. Attach the download script to the project.
 ```xml
