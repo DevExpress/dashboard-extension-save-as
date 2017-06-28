@@ -47,6 +47,6 @@ This extension is distributed under the **MIT** license (free and open-source), 
 
 ## Support & Feedback
 
-* Follow [this guideline](https://www.devexpress.com/Support/Center/Question/Details/T491859) for general information about a custom extension.
-* To learn how to work with extensions, see the following [KB article](https://isc.devexpress.com/Thread/WorkplaceDetails/T466716).
+* Refer to [this section](https://documentation.devexpress.com/#Dashboard/CustomDocument117232) for general information about client-side extensions.
+* To learn how to work with extensions, see the following [KB article](https://www.devexpress.com/Support/Center/Question/Details/T466716).
 * To address questions regarding the Web Dashboard and JavaScript API, use [DevExpress Support Center](https://www.devexpress.com/Support/Center).
