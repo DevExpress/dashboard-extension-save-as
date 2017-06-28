@@ -1,27 +1,29 @@
-<div class="dx-dashboard-typography dx-dashboard-popup" data-bind="dxPopup: { 
-		title: 'Save As...',
-		width: 400,
-		height: 185,
-		visible: visible,
-		showCloseButton: true,
-		toolbarItems: [{
-			toolbar: 'bottom',
-			widget: 'dxButton',
-			location: 'after',
-			options: {
-				text: 'Cancel',
-				onClick: hidePopup,
-				onInitialized: function (e) { e.element.addClass('dx-dashboard-confirm-sub-button'); }
-			}
-		}, {
-			toolbar: 'bottom',
-			widget: 'dxButton',
-			location: 'after',
-			options: {
-				text: 'Save',
-				onClick: saveAs
-			}
-		}]
-	}">
-	<div data-bind="dxTextBox: { value: newName }"></div>
-</div>
+<script type="text/html" id="dashboard-save-as-extension">
+	<div class="dx-dashboard-typography dx-dashboard-popup" data-bind="dxPopup: { 
+			title: 'Save As...',
+			width: 400,
+			height: 185,
+			visible: visible,
+			showCloseButton: true,
+			toolbarItems: [{
+				toolbar: 'bottom',
+				widget: 'dxButton',
+				location: 'after',
+				options: {
+					text: 'Cancel',
+					onClick: hidePopup,
+					onInitialized: function (e) { e.element.addClass('dx-dashboard-confirm-sub-button'); }
+				}
+			}, {
+				toolbar: 'bottom',
+				widget: 'dxButton',
+				location: 'after',
+				options: {
+					text: 'Save',
+					onClick: saveAs
+				}
+			}]
+		}">
+		<div data-bind="dxTextBox: { value: newName }"></div>
+	</div>
+</script>
