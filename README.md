@@ -1,21 +1,23 @@
-The **Save As** is a [Web Dashboard extension](https://documentation.devexpress.com/#Dashboard/CustomDocument117232) that adds the additional "Save As" button to the [dashboard menu](https://documentation.devexpress.com/#Dashboard/CustomDocument117444) and allows you to save the opened dashboard with another name.
+The **Save As** [Web Dashboard extension](https://documentation.devexpress.com/#Dashboard/CustomDocument117232) adds the additional "Save As" button to the [dashboard menu](https://documentation.devexpress.com/#Dashboard/CustomDocument117444) and allows you to save the opened dashboard with a different name.
 
 ![save-as-extension](https://user-images.githubusercontent.com/17986517/27138770-f4bfb910-5129-11e7-9346-a9a57dd41de8.png)
 
 ## Installation
 
-1. Download the latest version of scripts [here](https://github.com/DevExpress/dashboard-extension-save-as/releases) and add the *dist* folder in your project containing Web Dashboard.
+1. Download the latest version of the extension [here](https://github.com/DevExpress/dashboard-extension-save-as/releases).
 
-2. Attach the download script to the project.
+2. Add the *dist/save-as-extension.js* file in your project.
+
+3. Attach the download script to the project inside the ```<head>``` section onto the page containing Web Dashboard.
 ```xml
 <head>
-    <script src="/your-path/dashboard-extension-save-as/dist/save-as-extension.js"></script>
+    <script src="/dist/save-as-extension.js"></script>
     <!-- ... -->
 </head>
 ```
-3. Add the ```/dashboard-extension-save-as/dist/save-as-extension.html``` file content onto the page containing the Web Dashboard after the ```<body>``` tag. 
+4. Add the ```/dist/save-as-extension.html``` file content inside the ```<body>``` section. 
 
-4. Handle the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event to perform client-side customization of the Web Dashboard control before the control and its elements have been rendered.
+5. Handle the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event to perform client-side customization of the Web Dashboard control before the control and its elements have been rendered.
 ```xml
 <!-- For ASP.NET Web Forms -->
 <dx:ASPxDashboard ID="ASPxDashboard1" runat="server" DashboardStorageFolder="~/App_Data/Dashboards">
@@ -30,7 +32,7 @@ The **Save As** is a [Web Dashboard extension](https://documentation.devexpress.
 }).GetHtml()
 ```
 
-5. Register the custom item extension to add the Web Page to the Web Dashboard.
+6. Register the custom item extension to add the Save As extension to the Web Dashboard.
 
 ```javascript
 function onBeforeRender(sender) {
@@ -46,5 +48,5 @@ This extension is distributed under the **MIT** license (free and open-source), 
 ## Support & Feedback
 
 * Follow [this guideline](https://www.devexpress.com/Support/Center/Question/Details/T491859) for general information about a custom extension.
-* To learn how to create a custom item, see the following [KB article](https://www.devexpress.com/Support/Center/Question/Details/T491984).
+* To learn how to work with extensions, see the following [KB article](https://isc.devexpress.com/Thread/WorkplaceDetails/T466716).
 * To address questions regarding the Web Dashboard and JavaScript API, use [DevExpress Support Center](https://www.devexpress.com/Support/Center).
