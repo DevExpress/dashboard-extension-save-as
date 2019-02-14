@@ -1,3 +1,11 @@
+⛔ DEPRECATED. This project was converted to an example. Visit the required platform to find it:
+
+- [Web Forms Dashboard](https://github.com/DevExpress-Examples/web-dashboard-how-to-implement-save-as-and-delete-by-creating-custom-extensions-t466761) 
+- [MVC Dashboard](https://github.com/DevExpress-Examples/mvc-dashboard-how-to-define-extensions-providing-the-save-as-and-delete-functionality-t504201) 
+- [ASP.NET Core Dashboard](https://github.com/DevExpress-Examples/aspnet-core-dashboard-how-to-implement-the-save-as-and-delete-functionality-by-creating-cu-t601084)  
+
+------
+
 The **Save As** [Web Dashboard extension](https://documentation.devexpress.com/#Dashboard/CustomDocument117232) adds the additional "Save As" button to the [dashboard menu](https://documentation.devexpress.com/#Dashboard/CustomDocument117444) and allows you to save the opened dashboard with a different name.
 
 ![save-as-extension](https://user-images.githubusercontent.com/17986517/27138770-f4bfb910-5129-11e7-9346-a9a57dd41de8.png)
